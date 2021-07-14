@@ -23,19 +23,24 @@
                                     <constraint firstAttribute="height" constant="41" id="tQH-6P-Zrc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                <state key="normal" title="Войти в VK"/>
+                                <state key="normal" title="Войти в VK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="signInTouch:" destination="I9w-ks-xk0" eventType="touchUpInside" id="gwS-9G-HlW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.079295545140044998" green="0.073821244209290857" blue="0.13338753172588835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ja4-Lv-W1c" firstAttribute="centerX" secondItem="8kG-ko-8g1" secondAttribute="centerX" id="2FU-H3-z0c"/>
                             <constraint firstItem="ja4-Lv-W1c" firstAttribute="centerY" secondItem="8kG-ko-8g1" secondAttribute="centerY" id="iiL-ei-LfZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BuY-c2-kMu"/>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="ja4-Lv-W1c" id="ihq-BM-Nvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Od-EP-pCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,13 +9,14 @@
 import UIKit
 
 class AuthViewController: UIViewController {
+    @IBOutlet var signInButton: UIButton!
     
     private var authService: AuthService!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         authService = SceneDelegate.shared().authService
-        view.backgroundColor = .red
+        signInButton.layer.cornerRadius = 10
     }
 
     @IBAction func signInTouch(_ sender: UIButton) {
